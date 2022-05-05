@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="app">
+        <span>打工人: {{name}}</span>
+        <input type="text" v-model="name" />
+        <span>工资：{{more.salary}}</span>
+        <input type="text" v-model="more.salary" />
+        <h6>
+            感谢蛋老师的知识分析
+            <a href="https://www.bilibili.com/video/BV1934y1a7MN" target="_blank">原视频</a>
+             。新人整理不易 欢迎大家关注我的掘金一起讨论问题哦 顺便再给写的文章点个赞就好了 :)
+            <a href="https://juejin.cn/user/1372654389433496" target="_blank">juejin</a>
+        </h6>
+    </div>
+</body>
+</html>
+
+<script src="./vue.js"></script>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            name: '西维',
+            more: {
+                salary: 1000
+            }
+        }
+    })
+    console.log(vm)
+</script>
